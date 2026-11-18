@@ -1,0 +1,14 @@
+X:\PA 2\261057 - 16428 Projeto\261057 - 16428 Projeto\obj\Debug\net8.0-windows\261057 - 16428 Projeto.csproj.AssemblyReference.cache
+X:\PA 2\261057 - 16428 Projeto\261057 - 16428 Projeto\obj\Debug\net8.0-windows\_261057___16428_Projeto.Form2.resources
+X:\PA 2\261057 - 16428 Projeto\261057 - 16428 Projeto\obj\Debug\net8.0-windows\_261057___16428_Projeto.FrmCidades.resources
+X:\PA 2\261057 - 16428 Projeto\261057 - 16428 Projeto\obj\Debug\net8.0-windows\_261158_e_261081___Projeto_importante.FrmMenu.resources
+X:\PA 2\261057 - 16428 Projeto\261057 - 16428 Projeto\obj\Debug\net8.0-windows\_261158_e_261081___Projeto_importante.Views.FrmCidades.resources
+X:\PA 2\261057 - 16428 Projeto\261057 - 16428 Projeto\obj\Debug\net8.0-windows\261057 - 16428 Projeto.csproj.GenerateResource.cache
+X:\PA 2\261057 - 16428 Projeto\261057 - 16428 Projeto\obj\Debug\net8.0-windows\261057 - 16428 Projeto.GeneratedMSBuildEditorConfig.editorconfig
+X:\PA 2\261057 - 16428 Projeto\261057 - 16428 Projeto\obj\Debug\net8.0-windows\261057 - 16428 Projeto.AssemblyInfoInputs.cache
+X:\PA 2\261057 - 16428 Projeto\261057 - 16428 Projeto\obj\Debug\net8.0-windows\261057 - 16428 Projeto.AssemblyInfo.cs
+X:\PA 2\261057 - 16428 Projeto\261057 - 16428 Projeto\obj\Debug\net8.0-windows\261057 - 16428 Projeto.csproj.CoreCompileInputs.cache
+X:\PA 2\261057 - 16428 Projeto\261057 - 16428 Projeto\obj\Debug\net8.0-windows\_261057___16428_Projeto.FrmClientes.resources
+X:\PA 2\261057 - 16428 Projeto\261057 - 16428 Projeto\obj\Debug\net8.0-windows\_261057___16428_Projeto.Properties.Resources.resources
+X:\PA 2\261057 - 16428 Projeto\261057 - 16428 Projeto\obj\Debug\net8.0-windows\_261057___16428_Projeto.Views.FrmCidades.resources
+X:\PA 2\261057 - 16428 Projeto\261057 - 16428 Projeto\obj\Debug\net8.0-windows\_261057___16428_Projeto.FrmProdutos.resources
