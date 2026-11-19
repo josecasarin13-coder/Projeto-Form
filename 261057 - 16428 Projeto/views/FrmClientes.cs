@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using _261057___16428_Projeto.Models;
 
@@ -15,10 +9,13 @@ namespace _261057___16428_Projeto
     {
         Cidade ci;
         Cliente cl;
+
         public FrmClientes()
         {
             InitializeComponent();
+            this.Load += FrmClientes_Load;
         }
+
         void limparControles()
         {
             txtID.Clear();
@@ -31,11 +28,17 @@ namespace _261057___16428_Projeto
             picFoto.ImageLocation = "";
             chkVenda.Checked = false;
         }
+
+        void carregarGrid(string pesquisa)
+        {
+            cl = new Cliente();
+            cl.nome = pesquisa;
+            dgvClientes.DataSource = cl.Consultar();
+        }
+
         private void FrmClientes_Load(object sender, EventArgs e)
         {
-            //Cria um objeto do tipo cidade
-            //E alimenta o combobos
-            ci= new Cidade();
+            ci = new Cidade();
             cboCidades.DataSource = ci.Consultar();
             cboCidades.DisplayMember = "nome";
             cboCidades.ValueMember = "id";
@@ -43,9 +46,15 @@ namespace _261057___16428_Projeto
             limparControles();
             carregarGrid("");
 
-            //Deixa invisível colunas do Grid
-            dgvClientes.Columns["idCidade"].Visible = false;
-            dgvClientes.Columns["foto"].Visible = false;
+            if (dgvClientes.Columns["idCidade"] != null)
+                dgvClientes.Columns["idCidade"].Visible = false;
+            if (dgvClientes.Columns["foto"] != null)
+                dgvClientes.Columns["foto"].Visible = false;
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

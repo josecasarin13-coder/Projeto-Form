@@ -28,175 +28,216 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCidades));
             lbl1 = new Label();
             txtID = new TextBox();
             txtNome = new TextBox();
             label2 = new Label();
-            btnIncluir = new Button();
-            btnAlterar = new Button();
-            btnCancelar = new Button();
-            btnExcluir = new Button();
-            btnFechar = new Button();
             label3 = new Label();
             txtUF = new TextBox();
+            btnFechar = new Button();
+            btnExcluir = new Button();
+            btnCancelar = new Button();
+            btnAlterar = new Button();
+            btnIncluir = new Button();
             panel1 = new Panel();
-            dgvCidades = new DataGridView();
+            btnConsultar = new Button();
+            dgvClientes = new DataGridView();
             txtPesquisa = new TextBox();
-            label1 = new Label();
+            label8 = new Label();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvCidades).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvClientes).BeginInit();
             SuspendLayout();
             // 
             // lbl1
             // 
             lbl1.AutoSize = true;
-            lbl1.Location = new Point(34, 15);
+            lbl1.Location = new Point(12, 19);
             lbl1.Name = "lbl1";
-            lbl1.Size = new Size(49, 15);
+            lbl1.Size = new Size(61, 20);
             lbl1.TabIndex = 0;
             lbl1.Text = "Código:";
             // 
             // txtID
             // 
-            txtID.Location = new Point(34, 33);
+            txtID.Location = new Point(12, 43);
+            txtID.Margin = new Padding(3, 4, 3, 4);
             txtID.Name = "txtID";
-            txtID.Size = new Size(100, 23);
+            txtID.Size = new Size(114, 27);
             txtID.TabIndex = 1;
             // 
             // txtNome
             // 
-            txtNome.Location = new Point(34, 100);
+            txtNome.Location = new Point(12, 109);
+            txtNome.Margin = new Padding(3, 4, 3, 4);
             txtNome.Name = "txtNome";
-            txtNome.Size = new Size(575, 23);
+            txtNome.Size = new Size(657, 27);
             txtNome.TabIndex = 2;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(34, 82);
+            label2.Location = new Point(12, 85);
             label2.Name = "label2";
-            label2.Size = new Size(47, 15);
+            label2.Size = new Size(59, 20);
             label2.TabIndex = 3;
             label2.Text = "Cidade:";
-            // 
-            // btnIncluir
-            // 
-            btnIncluir.Location = new Point(34, 154);
-            btnIncluir.Name = "btnIncluir";
-            btnIncluir.Size = new Size(75, 23);
-            btnIncluir.TabIndex = 4;
-            btnIncluir.Text = "Incluir";
-            btnIncluir.UseVisualStyleBackColor = true;
-            // 
-            // btnAlterar
-            // 
-            btnAlterar.Location = new Point(149, 154);
-            btnAlterar.Name = "btnAlterar";
-            btnAlterar.Size = new Size(75, 23);
-            btnAlterar.TabIndex = 5;
-            btnAlterar.Text = "Alterar";
-            btnAlterar.UseVisualStyleBackColor = true;
-            // 
-            // btnCancelar
-            // 
-            btnCancelar.Location = new Point(265, 154);
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(75, 23);
-            btnCancelar.TabIndex = 6;
-            btnCancelar.Text = "Cancelar";
-            btnCancelar.UseVisualStyleBackColor = true;
-            // 
-            // btnExcluir
-            // 
-            btnExcluir.Location = new Point(372, 154);
-            btnExcluir.Name = "btnExcluir";
-            btnExcluir.Size = new Size(75, 23);
-            btnExcluir.TabIndex = 7;
-            btnExcluir.Text = "Excluir";
-            btnExcluir.UseVisualStyleBackColor = true;
-            // 
-            // btnFechar
-            // 
-            btnFechar.Location = new Point(482, 154);
-            btnFechar.Name = "btnFechar";
-            btnFechar.Size = new Size(75, 23);
-            btnFechar.TabIndex = 8;
-            btnFechar.Text = "Fechar";
-            btnFechar.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(663, 82);
+            label3.Location = new Point(709, 85);
             label3.Name = "label3";
-            label3.Size = new Size(24, 15);
+            label3.Size = new Size(29, 20);
             label3.TabIndex = 9;
             label3.Text = "UF:";
             // 
             // txtUF
             // 
-            txtUF.Location = new Point(663, 100);
+            txtUF.Location = new Point(709, 109);
+            txtUF.Margin = new Padding(3, 4, 3, 4);
             txtUF.Name = "txtUF";
-            txtUF.Size = new Size(100, 23);
+            txtUF.Size = new Size(114, 27);
             txtUF.TabIndex = 10;
+            // 
+            // btnFechar
+            // 
+            btnFechar.Image = (Image)resources.GetObject("btnFechar.Image");
+            btnFechar.ImageAlign = ContentAlignment.MiddleLeft;
+            btnFechar.Location = new Point(682, 156);
+            btnFechar.Margin = new Padding(3, 4, 3, 4);
+            btnFechar.Name = "btnFechar";
+            btnFechar.Size = new Size(141, 60);
+            btnFechar.TabIndex = 37;
+            btnFechar.Text = "Fechar";
+            btnFechar.TextAlign = ContentAlignment.MiddleRight;
+            btnFechar.UseVisualStyleBackColor = true;
+            // 
+            // btnExcluir
+            // 
+            btnExcluir.Image = (Image)resources.GetObject("btnExcluir.Image");
+            btnExcluir.ImageAlign = ContentAlignment.MiddleLeft;
+            btnExcluir.Location = new Point(503, 156);
+            btnExcluir.Margin = new Padding(3, 4, 3, 4);
+            btnExcluir.Name = "btnExcluir";
+            btnExcluir.Size = new Size(141, 60);
+            btnExcluir.TabIndex = 36;
+            btnExcluir.Text = "Excluir";
+            btnExcluir.TextAlign = ContentAlignment.MiddleRight;
+            btnExcluir.UseVisualStyleBackColor = true;
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.Image = (Image)resources.GetObject("btnCancelar.Image");
+            btnCancelar.ImageAlign = ContentAlignment.MiddleLeft;
+            btnCancelar.Location = new Point(342, 156);
+            btnCancelar.Margin = new Padding(3, 4, 3, 4);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new Size(135, 60);
+            btnCancelar.TabIndex = 35;
+            btnCancelar.Text = "Cancelar";
+            btnCancelar.TextAlign = ContentAlignment.MiddleRight;
+            btnCancelar.UseVisualStyleBackColor = true;
+            // 
+            // btnAlterar
+            // 
+            btnAlterar.Image = (Image)resources.GetObject("btnAlterar.Image");
+            btnAlterar.ImageAlign = ContentAlignment.MiddleLeft;
+            btnAlterar.Location = new Point(184, 156);
+            btnAlterar.Margin = new Padding(3, 4, 3, 4);
+            btnAlterar.Name = "btnAlterar";
+            btnAlterar.Size = new Size(135, 60);
+            btnAlterar.TabIndex = 34;
+            btnAlterar.Text = "Alterar";
+            btnAlterar.TextAlign = ContentAlignment.MiddleRight;
+            btnAlterar.UseVisualStyleBackColor = true;
+            // 
+            // btnIncluir
+            // 
+            btnIncluir.Image = (Image)resources.GetObject("btnIncluir.Image");
+            btnIncluir.ImageAlign = ContentAlignment.MiddleLeft;
+            btnIncluir.Location = new Point(14, 156);
+            btnIncluir.Margin = new Padding(3, 4, 3, 4);
+            btnIncluir.Name = "btnIncluir";
+            btnIncluir.Size = new Size(135, 60);
+            btnIncluir.TabIndex = 33;
+            btnIncluir.Text = "Incluir";
+            btnIncluir.TextAlign = ContentAlignment.MiddleRight;
+            btnIncluir.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
-            panel1.Controls.Add(dgvCidades);
+            panel1.Controls.Add(btnConsultar);
+            panel1.Controls.Add(dgvClientes);
             panel1.Controls.Add(txtPesquisa);
-            panel1.Controls.Add(label1);
-            panel1.Location = new Point(34, 208);
+            panel1.Controls.Add(label8);
+            panel1.Location = new Point(12, 224);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(740, 230);
-            panel1.TabIndex = 11;
+            panel1.Size = new Size(811, 307);
+            panel1.TabIndex = 32;
             // 
-            // dgvCidades
+            // btnConsultar
             // 
-            dgvCidades.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvCidades.Location = new Point(26, 67);
-            dgvCidades.Name = "dgvCidades";
-            dgvCidades.Size = new Size(703, 150);
-            dgvCidades.TabIndex = 4;
+            btnConsultar.Image = (Image)resources.GetObject("btnConsultar.Image");
+            btnConsultar.Location = new Point(702, 12);
+            btnConsultar.Margin = new Padding(3, 4, 3, 4);
+            btnConsultar.Name = "btnConsultar";
+            btnConsultar.Size = new Size(86, 66);
+            btnConsultar.TabIndex = 32;
+            btnConsultar.UseVisualStyleBackColor = true;
+            // 
+            // dgvClientes
+            // 
+            dgvClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvClientes.Location = new Point(30, 89);
+            dgvClientes.Margin = new Padding(3, 4, 3, 4);
+            dgvClientes.Name = "dgvClientes";
+            dgvClientes.RowHeadersWidth = 51;
+            dgvClientes.Size = new Size(758, 200);
+            dgvClientes.TabIndex = 4;
             // 
             // txtPesquisa
             // 
-            txtPesquisa.Location = new Point(26, 38);
+            txtPesquisa.Location = new Point(30, 51);
+            txtPesquisa.Margin = new Padding(3, 4, 3, 4);
             txtPesquisa.Name = "txtPesquisa";
-            txtPesquisa.Size = new Size(627, 23);
+            txtPesquisa.Size = new Size(658, 27);
             txtPesquisa.TabIndex = 3;
             // 
-            // label1
+            // label8
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(26, 20);
-            label1.Name = "label1";
-            label1.Size = new Size(213, 15);
-            label1.TabIndex = 1;
-            label1.Text = "Digite o nome da Cidade para Pesquisa";
+            label8.AutoSize = true;
+            label8.Location = new Point(30, 27);
+            label8.Name = "label8";
+            label8.Size = new Size(271, 20);
+            label8.TabIndex = 1;
+            label8.Text = "Digite o nome da Cidade para Pesquisa";
             // 
             // FrmCidades
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(panel1);
-            Controls.Add(txtUF);
-            Controls.Add(label3);
+            ClientSize = new Size(841, 551);
             Controls.Add(btnFechar);
             Controls.Add(btnExcluir);
             Controls.Add(btnCancelar);
             Controls.Add(btnAlterar);
             Controls.Add(btnIncluir);
+            Controls.Add(panel1);
+            Controls.Add(txtUF);
+            Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(txtNome);
             Controls.Add(txtID);
             Controls.Add(lbl1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FrmCidades";
             Text = "Cadastro de Cidades";
             Load += FrmCidades_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvCidades).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvClientes).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -207,16 +248,17 @@
         private TextBox txtID;
         private TextBox txtNome;
         private Label label2;
-        private Button btnIncluir;
-        private Button btnAlterar;
-        private Button btnCancelar;
-        private Button btnExcluir;
-        private Button btnFechar;
         private Label label3;
         private TextBox txtUF;
+        private Button btnFechar;
+        private Button btnExcluir;
+        private Button btnCancelar;
+        private Button btnAlterar;
+        private Button btnIncluir;
         private Panel panel1;
+        private Button btnConsultar;
+        private DataGridView dgvClientes;
         private TextBox txtPesquisa;
-        private Label label1;
-        private DataGridView dgvCidades;
+        private Label label8;
     }
 }

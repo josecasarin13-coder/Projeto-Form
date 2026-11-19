@@ -17,9 +17,9 @@ namespace _261057___16428_Projeto
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void txtValor_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
     }
 }

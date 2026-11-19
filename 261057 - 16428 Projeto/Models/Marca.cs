@@ -1,12 +1,7 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-using Org.BouncyCastle.Asn1.Cmp;
 using __261057___16428_Projeto;
 
 namespace _261057___16428_Projeto.Models
@@ -20,26 +15,27 @@ namespace _261057___16428_Projeto.Models
         {
             try
             {
-                //Abre conexão com o banco
                 Banco.AbrirConexao();
-                //Alimenta o método Command com a instrução desejada e indica a conexão utilizada
-                Banco.Comando = new MySqlCommand("SELECT * FROM Marcas where nome like @Marca " +
-                                                    "order by marca", Banco.Conexao);
-                //Cria os parâmetros utilizados na instrução SQL com seu respectivo conteúdo
-                Banco.Comando.Parameters.AddWithValue("@marca", marca + "%");
+
+                Banco.Comando = new MySqlCommand(
+                    "SELECT * FROM Marcas WHERE marca LIKE @marca ORDER BY marca",
+                    Banco.Conexao);
+
+                Banco.Comando.Parameters.AddWithValue("@marca", (marca ?? string.Empty) + "%");
+
                 Banco.Adaptador = new MySqlDataAdapter(Banco.Comando);
                 Banco.datTabela = new DataTable();
                 Banco.Adaptador.Fill(Banco.datTabela);
-                //Fecha a conexão
+
                 Banco.FecharConexao();
                 return Banco.datTabela;
             }
             catch (Exception e)
             {
+                Banco.FecharConexao();
                 MessageBox.Show(e.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }
         }
     }
 }
-

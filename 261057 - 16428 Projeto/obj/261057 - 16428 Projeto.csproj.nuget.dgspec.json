@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "X:\\PA 2\\261057 - 16428 Projeto\\261057 - 16428 Projeto\\261057 - 16428 Projeto.csproj": {}
+    "C:\\Users\\Alex\\Documents\\Desenvolvimento de Sistemas\\Projeto-Form\\261057 - 16428 Projeto\\261057 - 16428 Projeto.csproj": {}
   },
   "projects": {
-    "X:\\PA 2\\261057 - 16428 Projeto\\261057 - 16428 Projeto\\261057 - 16428 Projeto.csproj": {
+    "C:\\Users\\Alex\\Documents\\Desenvolvimento de Sistemas\\Projeto-Form\\261057 - 16428 Projeto\\261057 - 16428 Projeto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "X:\\PA 2\\261057 - 16428 Projeto\\261057 - 16428 Projeto\\261057 - 16428 Projeto.csproj",
+        "projectUniqueName": "C:\\Users\\Alex\\Documents\\Desenvolvimento de Sistemas\\Projeto-Form\\261057 - 16428 Projeto\\261057 - 16428 Projeto.csproj",
         "projectName": "261057 - 16428 Projeto",
-        "projectPath": "X:\\PA 2\\261057 - 16428 Projeto\\261057 - 16428 Projeto\\261057 - 16428 Projeto.csproj",
-        "packagesPath": "D:\\Users\\261057\\.nuget\\packages\\",
-        "outputPath": "X:\\PA 2\\261057 - 16428 Projeto\\261057 - 16428 Projeto\\obj\\",
+        "projectPath": "C:\\Users\\Alex\\Documents\\Desenvolvimento de Sistemas\\Projeto-Form\\261057 - 16428 Projeto\\261057 - 16428 Projeto.csproj",
+        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alex\\Documents\\Desenvolvimento de Sistemas\\Projeto-Form\\261057 - 16428 Projeto\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "D:\\Users\\261057\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,11 +26,11 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0-windows7.0": {
+          "net8.0-windows": {
+            "framework": "net8.0-windows7.0",
             "targetAlias": "net8.0-windows",
             "projectReferences": {}
           }
@@ -45,10 +45,11 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "10.0.400"
       },
       "frameworks": {
-        "net8.0-windows7.0": {
+        "net8.0-windows": {
+          "framework": "net8.0-windows7.0",
           "targetAlias": "net8.0-windows",
           "dependencies": {
             "MySql.Data": {
@@ -75,7 +76,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

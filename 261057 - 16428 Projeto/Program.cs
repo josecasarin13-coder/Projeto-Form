@@ -1,12 +1,10 @@
-using _261158_e_261081___Projeto_importante;
+using System;
+using System.Windows.Forms;
 
 namespace _261057___16428_Projeto
 {
     internal static class Program
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {

@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-using Org.BouncyCastle.Asn1.Cmp;
 using __261057___16428_Projeto;
 
 namespace _261057___16428_Projeto.Models
@@ -21,68 +16,90 @@ namespace _261057___16428_Projeto.Models
         public string cpf { get; set; }
         public string foto { get; set; }
         public bool venda { get; set; }
+
         public DataTable Consultar()
         {
             try
             {
-                Banco.Comando = new MySqlCommand("SELECT cl.*, ci.nome cidade, " + "ci.uf FROM Clientes cl inner join Cidades ci on (ci.id = cl.idCidade) " + "where cl.nome like ?Nome order by cl.nome", Banco.Conexao);
-                Banco.Comando.Parameters.AddWithValue("@Nome", nome + "%");
+                Banco.AbrirConexao();
+                Banco.Comando = new MySqlCommand(
+                    "SELECT cl.*, ci.nome AS cidade, ci.uf " +
+                    "FROM Clientes cl " +
+                    "INNER JOIN Cidades ci ON ci.id = cl.idCidade " +
+                    "WHERE cl.nome LIKE @Nome " +
+                    "ORDER BY cl.nome",
+                    Banco.Conexao);
+
+                Banco.Comando.Parameters.AddWithValue("@Nome", (nome ?? string.Empty) + "%");
+
                 Banco.Adaptador = new MySqlDataAdapter(Banco.Comando);
                 Banco.datTabela = new DataTable();
                 Banco.Adaptador.Fill(Banco.datTabela);
-                return Banco.datTabela;
 
+                Banco.FecharConexao();
+                return Banco.datTabela;
             }
             catch (Exception e)
             {
+                Banco.FecharConexao();
                 MessageBox.Show(e.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }
         }
+
         public void Incluir()
         {
             try
             {
-                Banco.Conexao.Open();
-                Banco.Comando = new MySqlCommand
-                    ("INSERT INTO clientes (nome, idCidade, dataNasc, renda, cpf, foto, venda) " +
-                     "VALUES (@nome, @idCidade, @dataNasc, @renda, @cpf, @foto, @venda)", Banco.Conexao);
-                Banco.Comando.Parameters.AddWithValue("@nome", nome);
+                Banco.AbrirConexao();
+                Banco.Comando = new MySqlCommand(
+                    "INSERT INTO clientes (nome, idCidade, dataNasc, renda, cpf, foto, venda) " +
+                    "VALUES (@nome, @idCidade, @dataNasc, @renda, @cpf, @foto, @venda)",
+                    Banco.Conexao);
+
+                Banco.Comando.Parameters.AddWithValue("@nome", (object)nome ?? DBNull.Value);
                 Banco.Comando.Parameters.AddWithValue("@idCidade", idCidade);
                 Banco.Comando.Parameters.AddWithValue("@dataNasc", dataNasc);
                 Banco.Comando.Parameters.AddWithValue("@renda", renda);
-                Banco.Comando.Parameters.AddWithValue("@cpf", cpf);
-                Banco.Comando.Parameters.AddWithValue("@foto", foto);
+                Banco.Comando.Parameters.AddWithValue("@cpf", (object)cpf ?? DBNull.Value);
+                Banco.Comando.Parameters.AddWithValue("@foto", (object)foto ?? DBNull.Value);
                 Banco.Comando.Parameters.AddWithValue("@venda", venda);
+
                 Banco.Comando.ExecuteNonQuery();
-                Banco.Conexao.Close();
+                Banco.FecharConexao();
             }
             catch (Exception e)
             {
+                Banco.FecharConexao();
                 MessageBox.Show(e.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
         public void Alterar()
         {
             try
             {
-                Banco.Conexao.Open();
-                Banco.Comando = new MySqlCommand
-                    ("UPDATE clientes SET nome = @nome, idCidade = @idCidade, dataNasc = @dataNasc, " +
-                     "renda = @renda, cpf = @cpf, foto = @foto, venda = @venda where id = @id", Banco.Conexao);
-                Banco.Comando.Parameters.AddWithValue("@nome", nome);
+                Banco.AbrirConexao();
+                Banco.Comando = new MySqlCommand(
+                    "UPDATE clientes SET nome = @nome, idCidade = @idCidade, dataNasc = @dataNasc, " +
+                    "renda = @renda, cpf = @cpf, foto = @foto, venda = @venda WHERE id = @id",
+                    Banco.Conexao);
+
+                Banco.Comando.Parameters.AddWithValue("@nome", (object)nome ?? DBNull.Value);
                 Banco.Comando.Parameters.AddWithValue("@idCidade", idCidade);
                 Banco.Comando.Parameters.AddWithValue("@dataNasc", dataNasc);
                 Banco.Comando.Parameters.AddWithValue("@renda", renda);
-                Banco.Comando.Parameters.AddWithValue("@cpf", cpf);
-                Banco.Comando.Parameters.AddWithValue("@foto", foto);
+                Banco.Comando.Parameters.AddWithValue("@cpf", (object)cpf ?? DBNull.Value);
+                Banco.Comando.Parameters.AddWithValue("@foto", (object)foto ?? DBNull.Value);
                 Banco.Comando.Parameters.AddWithValue("@venda", venda);
                 Banco.Comando.Parameters.AddWithValue("@id", id);
+
                 Banco.Comando.ExecuteNonQuery();
-                Banco.Conexao.Close();
+                Banco.FecharConexao();
             }
             catch (Exception e)
             {
+                Banco.FecharConexao();
                 MessageBox.Show(e.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -91,19 +108,18 @@ namespace _261057___16428_Projeto.Models
         {
             try
             {
-                Banco.Conexao.Open();
-                Banco.Comando = new MySqlCommand("delete from clientes where id = @id", Banco.Conexao);
+                Banco.AbrirConexao();
+                Banco.Comando = new MySqlCommand("DELETE FROM clientes WHERE id = @id", Banco.Conexao);
                 Banco.Comando.Parameters.AddWithValue("@id", id);
+
                 Banco.Comando.ExecuteNonQuery();
-                Banco.Conexao.Close();
+                Banco.FecharConexao();
             }
             catch (Exception e)
             {
+                Banco.FecharConexao();
                 MessageBox.Show(e.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
     }
 }
-
-

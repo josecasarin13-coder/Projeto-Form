@@ -1,37 +1,24 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-using Org.BouncyCastle.Asn1.Cmp;
-using __261057___16428_Projeto;
 
 namespace __261057___16428_Projeto
 {
     public class Banco
     {
         public static MySqlConnection Conexao;
-
         public static MySqlCommand Comando;
-
         public static MySqlDataAdapter Adaptador;
-
         public static DataTable datTabela;
 
-    
-
-    public static void AbrirConexao()
+        public static void AbrirConexao()
         {
             try
             {
-                Conexao = new MySqlConnection("server=localhost;port=3307;uid=root;pwd=etecjau ; database = vendas");
-
+                Conexao = new MySqlConnection("server=localhost;port=3307;uid=root;pwd=etecjau;database=vendas;");
                 Conexao.Open();
             }
-
             catch (Exception e)
             {
                 MessageBox.Show(e.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -42,11 +29,11 @@ namespace __261057___16428_Projeto
         {
             try
             {
-                Conexao = new MySqlConnection("server=localhost;port=3307;uid=root;pwd=etecjau;database = vendas");
-
-                Conexao.Close();
+                if (Conexao != null && Conexao.State != ConnectionState.Closed)
+                {
+                    Conexao.Close();
+                }
             }
-
             catch (Exception e)
             {
                 MessageBox.Show(e.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -57,56 +44,54 @@ namespace __261057___16428_Projeto
         {
             try
             {
-                AbrirConexao();
+                Conexao = new MySqlConnection("server=localhost;port=3307;uid=root;pwd=etecjau;");
+                Conexao.Open();
 
-                Comando = new MySqlCommand("CREATE DATABASE IF NOT EXISTS vendas; USE vendas", Conexao);
+                Comando = new MySqlCommand("CREATE DATABASE IF NOT EXISTS vendas;", Conexao);
                 Comando.ExecuteNonQuery();
 
-                Comando = new MySqlCommand("CREATE TABLE IF NOT EXISTS Cidades" +
-                                                            "id integer auto_increment primary key," +
-                                                            "nome char(40)," +
-                                                            "uf char(02))", Conexao);
+                Comando = new MySqlCommand("USE vendas;", Conexao);
                 Comando.ExecuteNonQuery();
 
-
-                Comando = new MySqlCommand("CREATE TABLE IF NOT EXISTS Categorias " +
-                          "(id integer auto_increment primary key, " +
-                          "categoria char(20))", Conexao);
-                Comando.ExecuteNonQuery();
-
-                Comando = new MySqlCommand("CREATE TABLE IF NOT EXISTS Clientes " +
-                                           "(Id integer auto_increment primary key, " +
+                Comando = new MySqlCommand("CREATE TABLE IF NOT EXISTS Cidades (" +
+                                           "id integer auto_increment primary key, " +
                                            "nome char(40), " +
-                                           "idCidade integer," +
-                                           "dataNasc date," +
+                                           "uf char(2));", Conexao);
+                Comando.ExecuteNonQuery();
+
+                Comando = new MySqlCommand("CREATE TABLE IF NOT EXISTS Categorias (" +
+                                           "id integer auto_increment primary key, " +
+                                           "categoria char(20));", Conexao);
+                Comando.ExecuteNonQuery();
+
+                Comando = new MySqlCommand("CREATE TABLE IF NOT EXISTS Clientes (" +
+                                           "Id integer auto_increment primary key, " +
+                                           "nome char(40), " +
+                                           "idCidade integer, " +
+                                           "dataNasc date, " +
                                            "renda decimal(10,2), " +
                                            "cpf char(14), " +
                                            "foto varchar(100), " +
-                                           "venda boolean)", Conexao);
+                                           "venda boolean);", Conexao);
                 Comando.ExecuteNonQuery();
 
-                Comando = new MySqlCommand("CREATE TABLE IF NOT EXISTS Produtos " +
-                                            "(Id integer auto_increment primary key, " +
-                                            "descricao char(48), " +
-                                            "idCategoria integer," +
-                                            "idMarca integer," +
-                                            "estoque decimal(10,3), " +
-                                            "valorVenda decimal(10,2), " +
-                                            "foto varchar(100))", Conexao);
+                Comando = new MySqlCommand("CREATE TABLE IF NOT EXISTS Produtos (" +
+                                           "Id integer auto_increment primary key, " +
+                                           "descricao char(48), " +
+                                           "idCategoria integer, " +
+                                           "idMarca integer, " +
+                                           "estoque decimal(10,3), " +
+                                           "valorVenda decimal(10,2), " +
+                                           "foto varchar(100));", Conexao);
                 Comando.ExecuteNonQuery();
 
                 FecharConexao();
             }
-
             catch (Exception e)
             {
+                FecharConexao();
                 MessageBox.Show(e.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
-
     }
-
 }
-        
-    
