@@ -35,8 +35,8 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
+            this.txtDescricao = new TextBox();
             txtCodigo = new TextBox();
-            txtDescricao = new TextBox();
             cboCategoria = new ComboBox();
             cboMarca = new ComboBox();
             ptbImagem = new PictureBox();
@@ -111,21 +111,21 @@
             label6.TabIndex = 6;
             label6.Text = "Valor:";
             // 
-            // txtCodigo
-            // 
-            txtCodigo.Location = new Point(22, 108);
-            txtCodigo.Margin = new Padding(3, 4, 3, 4);
-            txtCodigo.Name = "txtCodigo";
-            txtCodigo.Size = new Size(433, 27);
-            txtCodigo.TabIndex = 7;
-            // 
             // txtDescricao
             // 
-            txtDescricao.Location = new Point(22, 44);
-            txtDescricao.Margin = new Padding(3, 4, 3, 4);
-            txtDescricao.Name = "txtDescricao";
-            txtDescricao.Size = new Size(111, 27);
-            txtDescricao.TabIndex = 8;
+            this.txtDescricao.Location = new Point(22, 108);
+            this.txtDescricao.Margin = new Padding(3, 4, 3, 4);
+            this.txtDescricao.Name = "txtDescricao";
+            this.txtDescricao.Size = new Size(433, 27);
+            this.txtDescricao.TabIndex = 7;
+            // 
+            // txtCodigo
+            // 
+            txtCodigo.Location = new Point(22, 44);
+            txtCodigo.Margin = new Padding(3, 4, 3, 4);
+            txtCodigo.Name = "txtCodigo";
+            txtCodigo.Size = new Size(111, 27);
+            txtCodigo.TabIndex = 8;
             // 
             // cboCategoria
             // 
@@ -301,8 +301,8 @@
             Controls.Add(ptbImagem);
             Controls.Add(cboMarca);
             Controls.Add(cboCategoria);
-            Controls.Add(txtDescricao);
             Controls.Add(txtCodigo);
+            Controls.Add(this.txtDescricao);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -329,7 +329,7 @@
         private Label label5;
         private Label label6;
         private TextBox txtCodigo;
-        private TextBox txtDescricao;
+        private TextBox txtCodigo;
         private ComboBox cboCategoria;
         private ComboBox cboMarca;
         private PictureBox ptbImagem;
