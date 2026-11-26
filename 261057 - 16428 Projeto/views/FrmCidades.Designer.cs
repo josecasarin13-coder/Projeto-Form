@@ -42,11 +42,11 @@
             btnIncluir = new Button();
             panel1 = new Panel();
             btnConsultar = new Button();
-            dgvClientes = new DataGridView();
+            dgvCidades = new DataGridView();
             txtPesquisa = new TextBox();
             label8 = new Label();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvClientes).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvCidades).BeginInit();
             SuspendLayout();
             // 
             // lbl1
@@ -168,7 +168,7 @@
             // panel1
             // 
             panel1.Controls.Add(btnConsultar);
-            panel1.Controls.Add(dgvClientes);
+            panel1.Controls.Add(dgvCidades);
             panel1.Controls.Add(txtPesquisa);
             panel1.Controls.Add(label8);
             panel1.Location = new Point(12, 224);
@@ -187,15 +187,16 @@
             btnConsultar.TabIndex = 32;
             btnConsultar.UseVisualStyleBackColor = true;
             // 
-            // dgvClientes
+            // dgvCidades
             // 
-            dgvClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvClientes.Location = new Point(30, 89);
-            dgvClientes.Margin = new Padding(3, 4, 3, 4);
-            dgvClientes.Name = "dgvClientes";
-            dgvClientes.RowHeadersWidth = 51;
-            dgvClientes.Size = new Size(758, 200);
-            dgvClientes.TabIndex = 4;
+            dgvCidades.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvCidades.Location = new Point(30, 89);
+            dgvCidades.Margin = new Padding(3, 4, 3, 4);
+            dgvCidades.Name = "dgvCidades";
+            dgvCidades.RowHeadersWidth = 51;
+            dgvCidades.Size = new Size(758, 200);
+            dgvCidades.TabIndex = 4;
+            dgvCidades.CellContentClick += dgvCidades_CellContentClick;
             // 
             // txtPesquisa
             // 
@@ -237,7 +238,7 @@
             Load += FrmCidades_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvClientes).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvCidades).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -257,7 +258,7 @@
         private Button btnIncluir;
         private Panel panel1;
         private Button btnConsultar;
-        private DataGridView dgvClientes;
+        private DataGridView dgvCidades;
         private TextBox txtPesquisa;
         private Label label8;
     }

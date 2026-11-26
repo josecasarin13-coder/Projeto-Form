@@ -126,5 +126,10 @@ namespace _261057___16428_Projeto
                 txtUF.Text = linha.Cells["uf"].Value?.ToString() ?? string.Empty;
             }
         }
+
+        private void dgvCidades_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

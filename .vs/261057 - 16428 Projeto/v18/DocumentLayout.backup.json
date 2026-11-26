@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Alex\\Documents\\Desenvolvimento de Sistemas\\Projeto-Form\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3AFC6EF3-D51C-45AB-9F7E-527D76F5AC26}|261057 - 16428 Projeto\\261057 - 16428 Projeto.csproj|c:\\users\\alex\\documents\\desenvolvimento de sistemas\\projeto-form\\261057 - 16428 projeto\\views\\frmprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AFC6EF3-D51C-45AB-9F7E-527D76F5AC26}|261057 - 16428 Projeto\\261057 - 16428 Projeto.csproj|solutionrelative:261057 - 16428 projeto\\views\\frmprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3AFC6EF3-D51C-45AB-9F7E-527D76F5AC26}|261057 - 16428 Projeto\\261057 - 16428 Projeto.csproj|c:\\users\\alex\\documents\\desenvolvimento de sistemas\\projeto-form\\261057 - 16428 projeto\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3AFC6EF3-D51C-45AB-9F7E-527D76F5AC26}|261057 - 16428 Projeto\\261057 - 16428 Projeto.csproj|solutionrelative:261057 - 16428 projeto\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AFC6EF3-D51C-45AB-9F7E-527D76F5AC26}|261057 - 16428 Projeto\\261057 - 16428 Projeto.csproj|c:\\users\\alex\\documents\\desenvolvimento de sistemas\\projeto-form\\261057 - 16428 projeto\\views\\frmprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3AFC6EF3-D51C-45AB-9F7E-527D76F5AC26}|261057 - 16428 Projeto\\261057 - 16428 Projeto.csproj|solutionrelative:261057 - 16428 projeto\\views\\frmprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3AFC6EF3-D51C-45AB-9F7E-527D76F5AC26}|261057 - 16428 Projeto\\261057 - 16428 Projeto.csproj|c:\\users\\alex\\documents\\desenvolvimento de sistemas\\projeto-form\\261057 - 16428 projeto\\models\\marca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AFC6EF3-D51C-45AB-9F7E-527D76F5AC26}|261057 - 16428 Projeto\\261057 - 16428 Projeto.csproj|solutionrelative:261057 - 16428 projeto\\models\\marca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AFC6EF3-D51C-45AB-9F7E-527D76F5AC26}|261057 - 16428 Projeto\\261057 - 16428 Projeto.csproj|c:\\users\\alex\\documents\\desenvolvimento de sistemas\\projeto-form\\261057 - 16428 projeto\\models\\cidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3AFC6EF3-D51C-45AB-9F7E-527D76F5AC26}|261057 - 16428 Projeto\\261057 - 16428 Projeto.csproj|solutionrelative:261057 - 16428 projeto\\models\\cidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3AFC6EF3-D51C-45AB-9F7E-527D76F5AC26}|261057 - 16428 Projeto\\261057 - 16428 Projeto.csproj|c:\\users\\alex\\documents\\desenvolvimento de sistemas\\projeto-form\\261057 - 16428 projeto\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AFC6EF3-D51C-45AB-9F7E-527D76F5AC26}|261057 - 16428 Projeto\\261057 - 16428 Projeto.csproj|solutionrelative:261057 - 16428 projeto\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AFC6EF3-D51C-45AB-9F7E-527D76F5AC26}|261057 - 16428 Projeto\\261057 - 16428 Projeto.csproj|c:\\users\\alex\\documents\\desenvolvimento de sistemas\\projeto-form\\261057 - 16428 projeto\\views\\frmcidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3AFC6EF3-D51C-45AB-9F7E-527D76F5AC26}|261057 - 16428 Projeto\\261057 - 16428 Projeto.csproj|solutionrelative:261057 - 16428 projeto\\views\\frmcidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3AFC6EF3-D51C-45AB-9F7E-527D76F5AC26}|261057 - 16428 Projeto\\261057 - 16428 Projeto.csproj|c:\\users\\alex\\documents\\desenvolvimento de sistemas\\projeto-form\\261057 - 16428 projeto\\banco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AFC6EF3-D51C-45AB-9F7E-527D76F5AC26}|261057 - 16428 Projeto\\261057 - 16428 Projeto.csproj|solutionrelative:261057 - 16428 projeto\\banco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AFC6EF3-D51C-45AB-9F7E-527D76F5AC26}|261057 - 16428 Projeto\\261057 - 16428 Projeto.csproj|c:\\users\\alex\\documents\\desenvolvimento de sistemas\\projeto-form\\261057 - 16428 projeto\\views\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AFC6EF3-D51C-45AB-9F7E-527D76F5AC26}|261057 - 16428 Projeto\\261057 - 16428 Projeto.csproj|solutionrelative:261057 - 16428 projeto\\views\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,52 +42,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmProdutos.cs [Projeto]",
+              "DocumentIndex": 0,
+              "Title": "FrmProdutos.cs",
               "DocumentMoniker": "C:\\Users\\Alex\\Documents\\Desenvolvimento de Sistemas\\Projeto-Form\\261057 - 16428 Projeto\\views\\FrmProdutos.cs",
               "RelativeDocumentMoniker": "261057 - 16428 Projeto\\views\\FrmProdutos.cs",
-              "ToolTip": "C:\\Users\\Alex\\Documents\\Desenvolvimento de Sistemas\\Projeto-Form\\261057 - 16428 Projeto\\views\\FrmProdutos.cs [Projeto]",
-              "RelativeToolTip": "261057 - 16428 Projeto\\views\\FrmProdutos.cs [Projeto]",
+              "ToolTip": "C:\\Users\\Alex\\Documents\\Desenvolvimento de Sistemas\\Projeto-Form\\261057 - 16428 Projeto\\views\\FrmProdutos.cs",
+              "RelativeToolTip": "261057 - 16428 Projeto\\views\\FrmProdutos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-19T22:52:57.072Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2026-11-26T00:35:27.318Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Produto.cs",
               "DocumentMoniker": "C:\\Users\\Alex\\Documents\\Desenvolvimento de Sistemas\\Projeto-Form\\261057 - 16428 Projeto\\Models\\Produto.cs",
               "RelativeDocumentMoniker": "261057 - 16428 Projeto\\Models\\Produto.cs",
               "ToolTip": "C:\\Users\\Alex\\Documents\\Desenvolvimento de Sistemas\\Projeto-Form\\261057 - 16428 Projeto\\Models\\Produto.cs",
               "RelativeToolTip": "261057 - 16428 Projeto\\Models\\Produto.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-19T22:59:11.309Z",
+              "WhenOpened": "2026-11-26T00:34:53.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Marca.cs",
+              "DocumentMoniker": "C:\\Users\\Alex\\Documents\\Desenvolvimento de Sistemas\\Projeto-Form\\261057 - 16428 Projeto\\Models\\Marca.cs",
+              "RelativeDocumentMoniker": "261057 - 16428 Projeto\\Models\\Marca.cs",
+              "ToolTip": "C:\\Users\\Alex\\Documents\\Desenvolvimento de Sistemas\\Projeto-Form\\261057 - 16428 Projeto\\Models\\Marca.cs",
+              "RelativeToolTip": "261057 - 16428 Projeto\\Models\\Marca.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAIwDsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-26T00:34:43.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Banco.cs",
+              "DocumentMoniker": "C:\\Users\\Alex\\Documents\\Desenvolvimento de Sistemas\\Projeto-Form\\261057 - 16428 Projeto\\Banco.cs",
+              "RelativeDocumentMoniker": "261057 - 16428 Projeto\\Banco.cs",
+              "ToolTip": "C:\\Users\\Alex\\Documents\\Desenvolvimento de Sistemas\\Projeto-Form\\261057 - 16428 Projeto\\Banco.cs",
+              "RelativeToolTip": "261057 - 16428 Projeto\\Banco.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-26T00:34:14.552Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "FrmCidades.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\Alex\\Documents\\Desenvolvimento de Sistemas\\Projeto-Form\\261057 - 16428 Projeto\\views\\FrmCidades.cs",
-              "RelativeDocumentMoniker": "261057 - 16428 Projeto\\views\\FrmCidades.cs",
-              "ToolTip": "C:\\Users\\Alex\\Documents\\Desenvolvimento de Sistemas\\Projeto-Form\\261057 - 16428 Projeto\\views\\FrmCidades.cs [Projeto]",
-              "RelativeToolTip": "261057 - 16428 Projeto\\views\\FrmCidades.cs [Projeto]",
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "C:\\Users\\Alex\\Documents\\Desenvolvimento de Sistemas\\Projeto-Form\\261057 - 16428 Projeto\\Models\\Categoria.cs",
+              "RelativeDocumentMoniker": "261057 - 16428 Projeto\\Models\\Categoria.cs",
+              "ToolTip": "C:\\Users\\Alex\\Documents\\Desenvolvimento de Sistemas\\Projeto-Form\\261057 - 16428 Projeto\\Models\\Categoria.cs",
+              "RelativeToolTip": "261057 - 16428 Projeto\\Models\\Categoria.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwDsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-19T22:53:21.068Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2026-11-26T00:33:27.118Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Cidade.cs",
-              "DocumentMoniker": "C:\\Users\\Alex\\Documents\\Desenvolvimento de Sistemas\\Projeto-Form\\261057 - 16428 Projeto\\Models\\Cidade.cs",
-              "RelativeDocumentMoniker": "261057 - 16428 Projeto\\Models\\Cidade.cs",
-              "ToolTip": "C:\\Users\\Alex\\Documents\\Desenvolvimento de Sistemas\\Projeto-Form\\261057 - 16428 Projeto\\Models\\Cidade.cs",
-              "RelativeToolTip": "261057 - 16428 Projeto\\Models\\Cidade.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAzwBUAAAAjAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "FrmMenu.cs",
+              "DocumentMoniker": "C:\\Users\\Alex\\Documents\\Desenvolvimento de Sistemas\\Projeto-Form\\261057 - 16428 Projeto\\views\\FrmMenu.cs",
+              "RelativeDocumentMoniker": "261057 - 16428 Projeto\\views\\FrmMenu.cs",
+              "ToolTip": "C:\\Users\\Alex\\Documents\\Desenvolvimento de Sistemas\\Projeto-Form\\261057 - 16428 Projeto\\views\\FrmMenu.cs",
+              "RelativeToolTip": "261057 - 16428 Projeto\\views\\FrmMenu.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAADwvxYAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-19T22:58:42.404Z",
+              "WhenOpened": "2026-11-25T23:59:20.628Z",
               "EditorCaption": ""
             }
           ]

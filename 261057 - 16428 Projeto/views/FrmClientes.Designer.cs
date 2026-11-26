@@ -113,7 +113,7 @@
             label6.Size = new Size(148, 20);
             label6.TabIndex = 5;
             label6.Text = "Data de Nascimento:";
-            label6.Click += label6_Click;
+
             // 
             // label7
             // 
@@ -303,6 +303,7 @@
             btnAlterar.Text = "Alterar";
             btnAlterar.TextAlign = ContentAlignment.MiddleRight;
             btnAlterar.UseVisualStyleBackColor = true;
+            btnAlterar.Click += btnAlterar_Click;
             // 
             // btnIncluir
             // 
@@ -316,6 +317,7 @@
             btnIncluir.Text = "Incluir";
             btnIncluir.TextAlign = ContentAlignment.MiddleRight;
             btnIncluir.UseVisualStyleBackColor = true;
+            btnIncluir.Click += btnIncluir_Click;
             // 
             // FrmClientes
             // 

@@ -64,6 +64,11 @@ namespace __261057___16428_Projeto
                                            "categoria char(20));", Conexao);
                 Comando.ExecuteNonQuery();
 
+                Comando = new MySqlCommand("CREATE TABLE IF NOT EXISTS Marcas (" +
+                                           "id integer auto_increment primary key, " +
+                                           "marca char(20));", Conexao);
+                Comando.ExecuteNonQuery();
+
                 Comando = new MySqlCommand("CREATE TABLE IF NOT EXISTS Clientes (" +
                                            "Id integer auto_increment primary key, " +
                                            "nome char(40), " +

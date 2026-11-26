@@ -11,6 +11,25 @@ namespace _261057___16428_Projeto.Models
         public int id { get; set; }
         public string marca { get; set; }
 
+        public void Incluir()
+        {
+            try
+            {
+                Banco.AbrirConexao();
+                Banco.Comando = new MySqlCommand(
+                    "INSERT INTO Marcas (marca) VALUES (@marca)",
+                    Banco.Conexao);
+                Banco.Comando.Parameters.AddWithValue("@marca", marca);
+                Banco.Comando.ExecuteNonQuery();
+                Banco.FecharConexao();
+            }
+            catch (Exception e)
+            {
+                Banco.FecharConexao();
+                MessageBox.Show(e.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         public DataTable Consultar()
         {
             try
